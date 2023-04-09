@@ -4,11 +4,13 @@ import Header from "../Header/Header";
 
 const Master = () => {
   return (
-    <>
-      <Header />
-      <Outlet />
+    <div className="font-body">
+      <div className="container mx-auto">
+        <Header />
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
