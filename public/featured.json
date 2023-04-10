@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201-1.png",
+    "job_title": "Senior Software Engineer",
+    "company_name": "Google LLC",
+    "type": "Onsite",
+    "location": "San Francisco, CA",
+    "salary": "150k - $200k"
+  },
+  {
+    "id": "2",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/netflix-4%201.png",
+    "job_title": "Marketing Manager",
+    "company_name": "Netflix",
+    "type": "Remote",
+    "location": "San Francisco, CA",
+    "salary": "80k - $120k"
+  },
+  {
+    "id": "3",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/tesla-9%201.png",
+    "job_title": "Finance Analyst",
+    "company_name": "Tesla",
+    "type": "Onsite",
+    "location": "New York, NY",
+    "salary": "90k - $120k"
+  },
+  {
+    "id": "4",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201.png",
+    "job_title": "Data Scientist",
+    "company_name": "Google",
+    "type": "Remote",
+    "location": "New York, NY",
+    "salary": "110k - $140k"
+  }
+]

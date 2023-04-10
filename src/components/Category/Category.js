@@ -19,7 +19,10 @@ const Category = () => {
 
       <div className="mb-20 flex justify-center gap-x-8">
         {categories.map((category) => (
-          <div className="rounded-lg border-2 bg-indigo-50 p-10">
+          <div
+            key={category.id}
+            className="rounded-lg border-2 bg-indigo-50 p-10"
+          >
             <img className="mb-6" src={category.image} alt="accounts" />
             <h1 className="mb-4 text-xl font-bold">{category.name}</h1>
             <p className="text-base font-medium text-gray-500">
