@@ -1,10 +1,10 @@
-import logo from "../../assets/Images/CareerHub.png";
+import mosh from "../../assets/Images/0000.png";
 
 const Header = () => {
   return (
     <div className="flex items-center justify-between p-10">
       <div>
-        <img src={logo} alt="logo" />
+        <img src={mosh} alt="logo" />
       </div>
       <ul className="flex flex-row">
         <li className="px-8 text-base font-semibold text-gray-500">

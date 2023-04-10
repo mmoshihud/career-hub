@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Icons/accounts%201.png",
+    "name": "Account & Finance",
+    "jobs_count": 500
+  },
+  {
+    "id": 2,
+    "image": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Icons/business%201.png",
+    "name": "Marketing & Sales",
+    "jobs_count": 250
+  },
+  {
+    "id": 3,
+    "image": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Icons/social-media%201.png",
+    "name": "Creative Design",
+    "jobs_count": 400
+  },
+  {
+    "id": 4,
+    "image": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Icons/chip%201.png",
+    "name": "Human Resources",
+    "jobs_count": 150
+  }
+]
