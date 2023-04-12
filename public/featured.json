@@ -6,7 +6,13 @@
     "company_name": "Google LLC",
     "type": "Onsite",
     "location": "San Francisco, CA",
-    "salary": "150k - $200k"
+    "salary": "150k - $200k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "info@gmail.com"
   },
   {
     "id": "2",
@@ -15,7 +21,13 @@
     "company_name": "Netflix",
     "type": "Remote",
     "location": "San Francisco, CA",
-    "salary": "80k - $120k"
+    "salary": "80k - $120k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "netflix@gmail.com"
   },
   {
     "id": "3",
@@ -24,15 +36,57 @@
     "company_name": "Tesla",
     "type": "Onsite",
     "location": "New York, NY",
-    "salary": "90k - $120k"
+    "salary": "90k - $120k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "tesla@gmail.com"
   },
   {
     "id": "4",
-    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201.png",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201-1.png",
     "job_title": "Data Scientist",
-    "company_name": "Google",
+    "company_name": "Google LLC",
     "type": "Remote",
     "location": "New York, NY",
-    "salary": "110k - $140k"
+    "salary": "110k - $140k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "google@gmail.com"
+  },
+  {
+    "id": "5",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201.png",
+    "job_title": "Data Scientist",
+    "company_name": "Google LLC",
+    "type": "Onsite",
+    "location": "New York, NY",
+    "salary": "110k - $140k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "google@gmail.com"
+  },
+  {
+    "id": "6",
+    "logo": "https://raw.githubusercontent.com/ProgrammingHero1/career-hub/main/assets/Logo/google-1-1%201.png",
+    "job_title": "Data Scientist",
+    "company_name": "Google LLC",
+    "type": "Remote",
+    "location": "New York, NY",
+    "salary": "110k - $140k",
+    "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+    "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+    "requirements": "Bachelor degree to complete any reputations university.",
+    "experience": "2-3 Years in this field.",
+    "phone": "01750-000000",
+    "email": "google@gmail.com"
   }
 ]

@@ -5,6 +5,7 @@ import Master from "./components/Layout/Master";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import JobDetails from "./components/JobDetails/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Main />,
-        loader: () => fetch("featured.json"),
+      },
+      {
+        path: "/job-details/:jobId",
+        element: <JobDetails />,
       },
     ],
   },

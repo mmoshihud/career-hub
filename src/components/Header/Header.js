@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import mosh from "../../assets/Images/0000.png";
 
 const Header = () => {
@@ -7,13 +8,54 @@ const Header = () => {
         <img src={mosh} alt="logo" />
       </div>
       <ul className="flex flex-row">
-        <li className="px-8 text-base font-semibold text-gray-500">
+        <NavLink
+          to="/"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "px-8 text-base font-semibold text-indigo-500"
+              : isPending
+              ? "pending"
+              : "px-8 text-base font-semibold text-gray-500"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/home"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "px-8 text-base font-semibold text-indigo-500"
+              : isPending
+              ? "pending"
+              : "px-8 text-base font-semibold text-gray-500"
+          }
+        >
           Statistics
-        </li>
-        <li className="px-8 text-base font-semibold text-gray-500">
+        </NavLink>
+        <NavLink
+          to="/jobs"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "px-8 text-base font-semibold text-indigo-500"
+              : isPending
+              ? "pending"
+              : "px-8 text-base font-semibold text-gray-500"
+          }
+        >
           Applied Jobs
-        </li>
-        <li className="px-8 text-base font-semibold text-gray-500">Blog</li>
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive, isPending }) =>
+            isActive
+              ? "px-8 text-base font-semibold text-indigo-500"
+              : isPending
+              ? "pending"
+              : "px-8 text-base font-semibold text-gray-500"
+          }
+        >
+          Blog
+        </NavLink>
       </ul>
       <div>
         <button className="rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-4 py-4 text-xl font-bold text-white">

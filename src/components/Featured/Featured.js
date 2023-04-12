@@ -3,8 +3,19 @@ import {
   faLocationDot,
   faCircleDollarToSlot,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Featured = (props) => {
+  const job = props.jobs.slice(0, 4);
+  const [jobs, SetJobs] = useState(job);
+  const [showButton, setShowButton] = useState(true);
+  const handleSeeAll = () => {
+    const remaining = props.jobs.slice(4);
+    const allJobs = [...jobs, ...remaining];
+    SetJobs(allJobs);
+    setShowButton(false);
+  };
   return (
     <>
       <div className="flex flex-col items-center">
@@ -15,18 +26,18 @@ const Featured = (props) => {
         </p>
       </div>
       <div className="mb-4 grid grid-cols-2 gap-4">
-        {props.jobs.map((job) => (
+        {jobs.map((job) => (
           <div
             key={job.id}
             className="rounded-lg border-2 border-gray-300 p-10"
           >
-            <img className="mb-4" src={job.logo} alt="Logo" />
+            <img className="mb-4 w-32" src={job.logo} alt="Logo" />
             <h1 className="mb-4 text-2xl font-bold">{job.job_title}</h1>
             <p className="mb-4 text-lg text-gray-500">{job.company_name}</p>
-            <span class="mr-2 inline-block rounded border-2 border-indigo-400 px-2 py-1 text-base font-bold text-indigo-400">
+            <span className="mr-2 inline-block rounded border-2 border-indigo-400 px-2 py-1 text-base font-bold text-indigo-400">
               {job.type}
             </span>
-            <span class="inline-block rounded border-2 border-indigo-400 px-2 py-1 text-base font-bold text-indigo-400">
+            <span className="inline-block rounded border-2 border-indigo-400 px-2 py-1 text-base font-bold text-indigo-400">
               Full-Time
             </span>
 
@@ -39,17 +50,25 @@ const Featured = (props) => {
               />
               {job.salary}
             </p>
-            <button className="rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 p-3 text-base font-bold text-white">
+            <Link
+              to={`/job-details/${job.id}`}
+              className="rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 p-3 text-base font-bold text-white"
+            >
               View Details
-            </button>
+            </Link>
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
-        <button className="rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-8 py-4 text-xl font-bold text-white">
-          See All Jobs
-        </button>
-      </div>
+      {showButton && (
+        <div className="flex justify-center">
+          <button
+            onClick={handleSeeAll}
+            className="rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-8 py-4 text-xl font-bold text-white"
+          >
+            See All Jobs
+          </button>
+        </div>
+      )}
     </>
   );
 };
