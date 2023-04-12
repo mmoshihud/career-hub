@@ -21,7 +21,7 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink
-          to="/home"
+          to="/statistics"
           className={({ isActive, isPending }) =>
             isActive
               ? "px-8 text-base font-semibold text-indigo-500"
@@ -33,7 +33,7 @@ const Header = () => {
           Statistics
         </NavLink>
         <NavLink
-          to="/jobs"
+          to="/applied-jobs"
           className={({ isActive, isPending }) =>
             isActive
               ? "px-8 text-base font-semibold text-indigo-500"

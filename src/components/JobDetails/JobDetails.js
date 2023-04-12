@@ -13,12 +13,20 @@ import { useParams } from "react-router-dom";
 const JobDetails = () => {
   const { jobId } = useParams();
   const [jobs, setJobs] = useState([]);
+  const job = jobs.find((job) => job.id === jobId);
+  const [appliedJobs, setAppliedJobs] = useState([]);
+
+  const jobHandler = () => {
+    setAppliedJobs((prevState) => [...prevState, job]);
+    console.log(appliedJobs);
+  };
+
   useEffect(() => {
     fetch("/featured.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
-  const job = jobs.find((job) => job.id === jobId);
+
   return (
     <>
       {job && (
@@ -92,7 +100,10 @@ const JobDetails = () => {
                 </span>
               </div>
             </div>
-            <button className="col-start-3 rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-4 py-4 text-xl font-bold text-white">
+            <button
+              onClick={jobHandler}
+              className="col-start-3 rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-4 py-4 text-xl font-bold text-white"
+            >
               Apply Now
             </button>
           </div>
