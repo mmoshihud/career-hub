@@ -14,11 +14,29 @@ const JobDetails = () => {
   const { jobId } = useParams();
   const [jobs, setJobs] = useState([]);
   const job = jobs.find((job) => job.id === jobId);
-  const [appliedJobs, setAppliedJobs] = useState([]);
 
-  const jobHandler = () => {
-    setAppliedJobs((prevState) => [...prevState, job]);
-    console.log(appliedJobs);
+  const addToDb = (id) => {
+    let jobCart = {};
+
+    const storedCart = localStorage.getItem("job-cart");
+
+    if (storedCart) {
+      jobCart = JSON.parse(storedCart);
+    }
+
+    const quantity = jobCart[id];
+
+    if (quantity) {
+      jobCart[id] = quantity + 1;
+    } else {
+      jobCart[id] = 1;
+    }
+
+    localStorage.setItem("job-cart", JSON.stringify(jobCart));
+  };
+
+  const addToCartHandler = () => {
+    addToDb(jobId);
   };
 
   useEffect(() => {
@@ -101,7 +119,7 @@ const JobDetails = () => {
               </div>
             </div>
             <button
-              onClick={jobHandler}
+              onClick={addToCartHandler}
               className="col-start-3 rounded-lg bg-gradient-to-r from-indigo-400 to-indigo-500 px-4 py-4 text-xl font-bold text-white"
             >
               Apply Now
