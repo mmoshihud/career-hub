@@ -10,6 +10,7 @@ import { useEffect } from "react";
 const AppliedJobs = () => {
   const [jobs, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [filteredJob, setFilteredJob] = useState("Remote");
 
   useEffect(() => {
     fetch("featured.json")
@@ -37,7 +38,10 @@ const AppliedJobs = () => {
     }
     setCart(savedCart);
   }, [jobs]);
-  console.log(cart);
+
+  const dropdownChangeHandler = (event) => {
+    setFilteredJob(event.target.value);
+  };
   return (
     <>
       <div className="flex justify-end">
@@ -45,6 +49,7 @@ const AppliedJobs = () => {
           className="mb-4 rounded-lg p-4 text-base font-bold text-gray-500"
           name="cars"
           id="cars"
+          onChange={dropdownChangeHandler}
         >
           <option value="Remote">Remote</option>
           <option value="Onsite">Onsite</option>
